@@ -1,0 +1,115 @@
+<html lang="es">
+<head>
+    <meta name="viewport" content="with=device-width, initial.scale=1.0">
+
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="author" content="Diego Gomez">
+    <meta name="description" content="Pagina sobre normativas, correspondiente a la asignatura de Concepto de Redes Y Comunicaciones">
+    <meta name="keywords" content="unicoc">
+    <title>Articulo de Sistemas Operativos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body bgcolor="">
+    <CENTER>
+<header>
+    <img src="imagenes/logo_unicoc_1.png" height="200" width="550">
+    <h1><i><font face="Times new roman" color="red" >Niveles de jerarquia de protocolos</font></i></h1>
+    <p>Por: Diego Andres Gomez Zabala</p>
+    <nav>
+    <ul>
+
+        <li><a href="index.html">Normativas</a></li>
+        <li><a href="articulo.html">NIVELES OSI</a></li>
+
+    </ul>
+</nav>
+
+    <br><hr>
+</header>
+
+
+<h2>Modelo OSI</h2>
+
+     <p><font face="Arial" color="red" ><b>Capa Física</b></font></p>
+
+
+    <p><font color="black" size="3" face="times new roman">
+        La capa física del modelo OSI (Open Systems Interconnection) es la capa más baja y se encarga de la transmisión física de bits a través de un medio de comunicación, como cables de cobre, fibra óptica o ondas de radio. Su principal objetivo es establecer las características eléctricas, mecánicas, funcionales y procedimientos para activar, mantener y desactivar las conexiones físicas.</font></p>
+        <p>Ethernet: Es uno de los protocolos más utilizados para la transmisión de datos en redes locales (LAN). Define cómo los datos se colocan en el medio de transmisión, cómo se accede al medio compartido y cómo se gestionan las colisiones.</p>
+        <p>USB (Universal Serial Bus): Es un estándar que define cables, conectores y protocolos para la conexión, comunicación y suministro de energía entre dispositivos electrónicos. Aunque a menudo se asocia más con la conexión de dispositivos periféricos, como impresoras o cámaras, también puede utilizarse para la transmisión de datos entre dispositivos.</p>
+        <br><br>
+        
+
+        <p><font face="Arial" color="red"><b>Capa de Enlace de Datos</b></font></p>
+
+
+        <p><font color="black" size="3" face="times new roman">
+            La capa de enlace de datos, que es la segunda capa del modelo OSI, se encarga de la transferencia confiable de información a través de un enlace de comunicación física. Esta capa toma los datos de la capa de red y los divide en tramas, gestionando la comunicación punto a punto entre dispositivos adyacentes. Además, proporciona mecanismos para el control de errores, la detección de errores y el control de flujo.</font></p>
+            <p>Protocolo de control de enlace lógico (LLC - Logical Link Control): Este protocolo opera en la subcapa de control lógico de enlace y se encarga de la multiplexación y demultiplexación de protocolos de red, permitiendo la transmisión de varios protocolos de red sobre un solo medio físico.</p>
+            <p>Protocolo de control de acceso al medio (MAC - Media Access Control): Esta es otra subcapa de la capa de enlace de datos y se encarga de la dirección física de hardware, conocida como la dirección MAC. El protocolo MAC define cómo los dispositivos en la red acceden al medio compartido y evitan colisiones.</p>
+            <br><br>
+
+
+
+        <p><font face="Arial" color="red"><b>Capa de Red</b></font></p>
+
+
+            <p><font color="black" size="3" face="times new roman">
+            La capa de red es la tercera capa del modelo OSI y se ocupa de establecer, mantener y terminar conexiones de red. Su función principal es enrutar los datos desde el origen hasta el destino a través de la red, gestionando la determinación de la mejor ruta, la fragmentación y el reensamblaje de paquetes, así como la dirección lógica de los dispositivos en la red.</font></p>
+            <p>IP (Internet Protocol): Este protocolo es esencial para la comunicación en Internet y en muchas redes locales. IP se encarga de asignar direcciones únicas a cada dispositivo en la red, conocidas como direcciones IP, y de enrutar los paquetes de datos desde el origen hasta el destino a través de la red.</p>
+            <p>OSPF (Open Shortest Path First): Este es un protocolo de enrutamiento dinámico utilizado para determinar la mejor ruta para enviar datos en una red IP. OSPF calcula la ruta más corta basándose en el costo de las conexiones de red y se adapta dinámicamente a cambios en la topología de la red.</p>
+            <br><br>
+
+
+
+
+            <p><font face="Arial" color="red"><b>Capa de Transporte</b></font></p>
+
+
+            <p><font color="black" size="3" face="times new roman">           
+            La capa de transporte, la cuarta capa del modelo OSI, se encarga de proporcionar un servicio de transferencia de datos confiable y eficiente entre los dispositivos finales (por ejemplo, computadoras) en una red. Esta capa maneja aspectos como el control de flujo, la segmentación y reensamblaje de datos, así como la corrección de errores. Además, la capa de transporte garantiza que los datos se entreguen en el orden correcto y de manera completa.</font></p>
+            <p>TCP (Transmission Control Protocol): TCP es un protocolo orientado a la conexión que ofrece una comunicación confiable y libre de errores entre dispositivos. Proporciona un mecanismo de control de flujo, garantiza la entrega ordenada de datos y realiza la retransmisión de paquetes en caso de pérdida. TCP se utiliza comúnmente en aplicaciones que requieren una transmisión precisa de datos, como la navegación web y la transferencia de archivos.</p>    
+            <p>UDP (User Datagram Protocol): UDP, a diferencia de TCP, es un protocolo sin conexión y no garantiza la entrega de datos ni el orden correcto. Sin embargo, es más liviano y más rápido que TCP, lo que lo hace adecuado para aplicaciones en las que una pérdida ocasional de datos no es crítica. UDP se utiliza en aplicaciones como transmisión de audio y video en tiempo real, juegos en línea y servicios de voz sobre IP.</p>
+            <br><br>
+
+
+
+
+            <p><font face="Arial" color="red"><b>Capa de Sesión</b></font></p>
+
+
+            <p><font color="black" size="3" face="times new romam">
+                La capa de sesión es la quinta capa del modelo OSI y se encarga de establecer, mantener y finalizar las sesiones de comunicación entre aplicaciones en dispositivos finales. Su función principal es gestionar el diálogo y la sincronización entre las aplicaciones, asegurando una comunicación efectiva y organizada.</font></p>
+                <p>NetBIOS (Network Basic Input/Output System): NetBIOS es un conjunto de servicios y protocolos que facilitan la comunicación entre dispositivos en una red. Proporciona funciones para establecer sesiones, nomenclatura de servicios y resolución de nombres. Aunque NetBIOS se utiliza principalmente en entornos Windows, su funcionalidad puede ser implementada en otros sistemas operativos.</p>
+                <p>PPTP (Point-to-Point Tunneling Protocol): Aunque PPTP se asocia más comúnmente con la capa de red para la implementación de redes privadas virtuales (VPN), también tiene elementos de la capa de sesión. PPTP establece y gestiona sesiones de comunicación seguras a través de una red pública, permitiendo la transmisión segura de datos entre dispositivos.</p>
+            <br><br>
+
+
+
+
+            <p><font face="Arial" color="red"><b>Capa de Presentación</b></font></p>
+
+
+            <p><font color="black" size="3" face="times new roman">
+                
+                La capa de presentación es la sexta capa del modelo OSI y se ocupa de la representación de datos, su codificación y compresión, así como de garantizar que la información sea comprensible entre sistemas con diferentes formatos de datos. En otras palabras, la capa de presentación se encarga de la sintaxis y semántica de los datos durante su intercambio entre sistemas.</font></p>
+                <p>SSL/TLS (Secure Sockets Layer/Transport Layer Security): Aunque SSL y su sucesor TLS son a menudo asociados más con la capa de transporte, también tienen elementos de la capa de presentación. Estos protocolos se utilizan para proporcionar seguridad en las comunicaciones, incluyendo la encriptación de datos y la autenticación del servidor y, en algunos casos, del cliente.</p>
+                <p>JPEG (Joint Photographic Experts Group): Aunque JPEG es principalmente un formato de compresión de imágenes, su implementación también implica aspectos de la capa de presentación. JPEG define cómo se comprimen y descomprimen las imágenes, lo que puede considerarse como parte del proceso de representación y sintaxis de datos.</p>
+            <br><br>
+
+ 
+
+
+            <p><font face="Arial" color="red"><b>Capa de Aplicación</b></font></p>
+
+
+            <p><font color="black" size="3" face="times new roman">
+                La capa de aplicación es la séptima y última capa del modelo OSI. Esta capa proporciona una interfaz directa con las aplicaciones del usuario y servicios de red. Se encarga de ofrecer servicios de red específicos para las aplicaciones y facilita la comunicación entre las aplicaciones en diferentes dispositivos finales.</font></p>
+                <p>HTTP (Hypertext Transfer Protocol): Este protocolo se utiliza para la transferencia de información en la World Wide Web. Permite la comunicación entre un navegador web y un servidor web, facilitando la solicitud y entrega de recursos como páginas HTML, imágenes y archivos.</p>
+                <p>SMTP (Simple Mail Transfer Protocol): SMTP es un protocolo de la capa de aplicación utilizado para la transmisión de correos electrónicos. Define cómo los correos electrónicos son enviados y recibidos a través de la red, permitiendo la comunicación eficiente entre servidores de correo electrónico.</p>                
+            <br><br>
+
+
+
+</body>
+</html>
